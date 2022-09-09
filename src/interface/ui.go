@@ -1,7 +1,6 @@
 package ui
 
 import (
-	"io/ioutil"
 	"log"
 	"os"
 
@@ -18,11 +17,17 @@ func _error(err interface{}) {
 }
 
 func GetBanner() {
+
+	text := `
+
+    \|/ ____ \|/       
+     @~/ ,. \~@     pwnfaces v1.1 - Primefaces 5.X EL Injection Exploit
+    /_( \__/ )_\    by oppsec (thanks to pimps)
+       \__U_/     
 	
-	content, err := ioutil.ReadFile("src/interface/banner.txt")
-	_error(err)
+	`
 
 	bannerMsg := color.New(color.FgCyan).Add(color.Bold)
-	bannerMsg.Println(string(content))
+	bannerMsg.Println(text)
 
 }
