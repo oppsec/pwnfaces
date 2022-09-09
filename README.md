@@ -5,6 +5,8 @@
     <img src="./assets/preview.png" width="850">
 </div>
 
+<br>
+
 <p align="center">
     <img src="https://img.shields.io/github/license/oppsec/pwnfaces?color=cyan&logo=github&logoColor=cyan&style=for-the-badge">
     <img src="https://img.shields.io/github/issues/oppsec/pwnfaces?color=cyan&logo=github&logoColor=cyan&style=for-the-badge">
