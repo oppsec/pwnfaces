@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/jessevdk/go-flags"
-	"pwnfaces/src/interface"
-	"pwnfaces/src/pwnfaces"
+	"github.com/oppsec/pwnfaces/src/interface"
+	"github.com/oppsec/pwnfaces/src/pwnfaces"
 )
 
 func error(err interface{}) {
