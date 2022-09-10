@@ -1,5 +1,0 @@
-
-    \|/ ____ \|/       
-     @~/ ,. \~@     pwnfaces - Primefaces 5.X EL Injection Exploit
-    /_( \__/ )_\    by oppsec (thanks to pimps)
-       \__U_/     
