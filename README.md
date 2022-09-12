@@ -29,7 +29,7 @@ ___
 A quick guide of how to install and use pwnfaces.
 
 ```shell
-1. go install github.com/oppsec/pwnfaces
+1. go install github.com/oppsec/pwnfaces@latest
 2. pwnfaces -u http://127.0.0.1:8090/javax.faces.resource/dynamiccontent.properties.xhtml
 ```
 
