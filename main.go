@@ -25,11 +25,12 @@ func main() {
 	var opts struct {
 		Url string `short:"u" long:"url" description:"Definition: Argument used to pass target URL" required:"true"`
 		Cmd string `short:"c" long:"cmd" description:"Definition: Argument used to pass the command" required:"false" default:"whoami"`
+		Proxy string `short:"p" long:"proxy" description:"Definition: Argument used to pass proxy (SOCKS4, SOCKS4a, SOCKS5 or HTTP)" required:"false"`
 	}
 
 	_, err := flags.Parse(&opts)
 	error(err)
 
-	exploit.TargetConnect(opts.Url, opts.Cmd)
+	exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy)
 
 }
