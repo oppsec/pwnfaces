@@ -23,7 +23,7 @@ func main() {
 	ui.GetBanner()
 
 	var opts struct {
-		Url string `short:"u" long:"url" description:"Definition: Argument used to pass target URL" required:"true"`
+		Url string `short:"u" long:"url" description:"Definition: Argument used to pass target URL (ex: http://127.0.0.1:8090/javax.faces.resource/dynamiccontent.properties.xhtml)" required:"true"`
 		Cmd string `short:"c" long:"cmd" description:"Definition: Argument used to pass the command" required:"false" default:"whoami"`
 		Proxy string `short:"p" long:"proxy" description:"Definition: Argument used to pass proxy (SOCKS4, SOCKS4a, SOCKS5 or HTTP)" required:"false"`
 	}
