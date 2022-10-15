@@ -21,8 +21,8 @@ func GetBanner() {
 	text := `
 
     \|/ ____ \|/       
-     @~/ ,. \~@     pwnfaces v1.3.4 - Primefaces 5.X EL Injection Exploit
-    /_( \__/ )_\    by oppsec (thanks to pimps)
+     @~/ ,. \~@     pwnfaces v1.3.5 - Primefaces 5.X EL Injection Exploit
+    /_( \__/ )_\    by oppsec & march0s1as (thanks to pimps)
        \__U_/     
 	
 	`
