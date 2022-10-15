@@ -31,6 +31,11 @@ func main() {
 	_, err := flags.Parse(&opts)
 	error(err)
 
-	exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy)
+	check_slash  := opts.Url[len(opts.Url)-1:]
 
+	if check_slash == "/"{
+		exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy)
+	} else if check_slash != "/"{
+		exploit.TargetConnect(opts.Url + "/", opts.Cmd, opts.Proxy)
+	}
 }
