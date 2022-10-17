@@ -2,7 +2,7 @@
 > Primefaces 5.X EL Injection Exploit
 
 <div align="center">
-    <img src="./assets/preview.png" width="850">
+    <img src="./assets/banner.png" width="850">
 </div>
 
 <br>

@@ -1,3 +1,8 @@
+# 🎉 1.3.6c - 16/10/2022
+- Updated banner image
+- Fixed variable names
+- Minor changes...
+
 # 🎉 1.3.6b - 16/10/2022
 - Changed variables in camel_case to the correct case used by Golang
 - Fixed variable names (resp123 ?)
