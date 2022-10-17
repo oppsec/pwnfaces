@@ -31,11 +31,11 @@ func main() {
 	_, err := flags.Parse(&opts)
 	error(err)
 
-	check_slash  := opts.Url[len(opts.Url)-1:]
+	checkSlash  := opts.Url[len(opts.Url)-1:]
 
-	if check_slash == "/"{
+	if checkSlash == "/" {
 		exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy)
-	} else if check_slash != "/"{
+	} else if checkSlash != "/" {
 		exploit.TargetConnect(opts.Url + "/", opts.Cmd, opts.Proxy)
 	}
 }
